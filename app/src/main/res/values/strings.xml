@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimeLapseCam</string>
+    <string name="request_permission">Please give permission to use camera!!!</string>
+    <string name="camera_error">Something wrong!!!</string>
+    <string name="intro_message">Whats up guys!!!</string>
+    <string name="title_activity_text_recognition">TextRecognitionActivity</string>
+
+</resources>

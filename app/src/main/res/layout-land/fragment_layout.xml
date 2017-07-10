@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        >
+
+        <com.sheshu.timelapsecam.view.AutoFitTextureView
+            android:id="@+id/texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/converted_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="scanned output:"
+                android:layout_toStartOf="@+id/info"
+                android:background="@android:color/transparent"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:visibility="visible"/>
+
+
+                <ImageButton
+                    android:id="@+id/info"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="2dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+
+                    android:src="@android:drawable/ic_menu_info_details"/>
+
+                <ImageButton
+                    android:id="@+id/take_picture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:background="@android:color/transparent"
+                    android:layout_toEndOf="@id/converted_text"
+                    android:layout_below="@+id/info"
+                    android:layout_alignParentEnd="true"
+
+                    android:src="@android:drawable/ic_menu_camera"/>
+
+                <ImageButton
+                    android:id="@+id/clear"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:background="@android:color/transparent"
+                    android:layout_toEndOf="@id/converted_text"
+                    android:layout_below="@+id/take_picture"
+
+                    android:layout_alignParentEnd="true"
+
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
